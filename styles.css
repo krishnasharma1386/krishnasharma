@@ -14,7 +14,6 @@ html{
   --second-background: rgb(21, 21, 21);
   --grad-color: linear-gradient(to right, #4CAF50,#3ec5ff);
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #000;
@@ -235,10 +234,11 @@ h3 {
 }
 
 .section-title {
-    font-size: 36px;
+    font-size: 4.5em;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 40px;
-    color: #4CAF50;
+    color: #e6e4e4;
     text-shadow: 0 0 0 20px rgba(195, 201, 191, 0.655);
 }
 
@@ -246,17 +246,27 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    /* text-align: justify; */
+    padding-left: 10px;
+    gap: 6rem;
+}
+.about-content p{
+    color: #e6e4e4;
+}
+.about-content h2{
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .about-image {
-    flex: 0 0 400px;
+    flex: 0 0 25rem;
+    padding-top: 50px;
 }
 
 .about-image img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 50%;
     box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
 }
 
@@ -268,6 +278,62 @@ h3 {
 
 .about-text {
     flex: 1;
+}
+
+
+/*                  SKILLS            */
+.Skills {
+    padding: 80px 0;
+    background-color: #111;
+}
+
+.skill-tree {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-tree__title {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+
+.skill-tree__container {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.skill-category {
+    flex: 0 0 auto;
+    margin-right: 40px;
+}
+
+.skill-category:last-child {
+    margin-right: 0;
+}
+
+.skill-category__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-item {
+    background-color: #2d3748;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+section {
+    min-height: 100vh; /* Ensures each section takes at least the full viewport height */
+    padding: 40px 0; /* Adds some padding to separate sections */
 }
 
 
@@ -302,7 +368,14 @@ h3 {
     .about-content {
         flex-direction: column;
     }
-
+    .about-content h2 {
+        align-items: center;
+        text-align: center;
+    }
+    .about-content p{
+        align-items: center;
+        text-align: center;
+    }
     .about-image {
         flex: 0 0 auto;
         width: 100%;
